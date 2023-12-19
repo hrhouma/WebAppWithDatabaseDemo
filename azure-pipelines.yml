@@ -44,12 +44,6 @@ jobs:
     displayName: 'PS : Add Project GUID'
     enabled: false
   
-  - task: SonarCloudPrepare@1
-    displayName: 'Prepare analysis on SonarCloud'
-    inputs:
-      SonarCloud: SonarCloud
-      organization: hrehouma
-      projectKey: WebAppWithDatabaseDemo
   
   - task: DotNetCoreCLI@2
     displayName: Build
